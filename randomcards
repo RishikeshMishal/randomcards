@@ -1,0 +1,7 @@
+window.onload = choosePic;
+
+var myPix = new Array("https://educeum.org/wp-content/uploads/2021/06/2.png","https://educeum.org/wp-content/uploads/2021/06/1.png","https://educeum.org/wp-content/uploads/2021/06/3.png");
+
+function choosePic() {
+     var randomNum = Math.floor(Math.random() * myPix.length);
+     document.getElementById("myPicture").src = myPix[randomNum];
